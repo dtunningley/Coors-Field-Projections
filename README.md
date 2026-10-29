@@ -1,7 +1,3 @@
-# Coors-Field-Projections
-Marcel Hitter Projections Adjusting for Coors Field
-
-
 # Projecting hitters at altitude: a Coors-aware Marcel
 
 A transparent hitter projection system, built from every regular-season plate appearance from 2012 to 2025 (about 2.46 million, from Retrosheet). It asks one question: **does handling Coors Field explicitly make projections better, and for whom?**
@@ -11,7 +7,7 @@ Three versions are compared on seasons the model never saw while it was being tu
 | Version | What it does |
 |---|---|
 | **Plain Marcel** | Tom Tango's baseline: weights the last three seasons 5/4/3, regresses toward league average, adjusts for age. No park handling. |
-| **Park-adjusted** | Neutralizes every past plate appearance by its park's factors (singles, doubles, triples, HR, walks, HBP, strikeouts), projects in a neutral park, then places the projection back into the parks the hitter actually plays in. |
+| **Park-adjusted** | Neutralizes every past plate appearance by its park's *component* factors (singles, doubles, triples, HR, walks, HBP, strikeouts), projects in a neutral park, then places the projection back into the parks the hitter actually plays in. |
 | **Park + Rockies multipliers** | Adds Rockies-specific home and road multipliers, learned from training-season errors, to capture what a generic park factor misses: the home team's extra benefit at altitude and the "Coors hangover" on the road. |
 
 ## Key findings
